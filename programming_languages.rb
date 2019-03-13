@@ -7,7 +7,6 @@ def reformat_languages(languages)
       if values == nil
         new_hash[values] = attributes
       end
-      new_hash[values] = types
       new_hash[values][:style] = []
 
     end
