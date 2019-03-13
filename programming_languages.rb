@@ -4,10 +4,10 @@ def reformat_languages(languages)
   blank = []
   languages.each do |keys, values|
     values.each do |values, types|
-    new_hash[values] = types
-    new_hash[values][:style] = []
+      types.each do |types, names|
+        return names
+  
     end
   end
-  new_hash[:javascript][:style] = :oo
   new_hash
 end
