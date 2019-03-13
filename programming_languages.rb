@@ -7,7 +7,7 @@ def reformat_languages(languages)
     end
   end
   new_hash[:ruby][:style] << :oo
-  new_hash[:javascript][:style] += :oo, :functional
+  new_hash[:javascript][:style].push(:oo, :functional)
   new_hash[:python][:style] << :oo
   new_hash[:java][:style] << :oo
   new_hash[:clojure][:style] << :functional
