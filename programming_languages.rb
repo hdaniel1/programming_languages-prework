@@ -6,6 +6,12 @@ def reformat_languages(languages)
       new_hash[values][:style] = []
     end
   end
-  new_hash[:javascript][:style] << :oo
+  new_hash[:ruby][:style] << :oo
+  new_hash[:javascript][:style] += :oo, :functional
+  new_hash[:python][:style] << :oo
+  new_hash[:java][:style] << :oo
+  new_hash[:clojure][:style] << :functional
+  new_hash[:erlang][:style] << :functional
+  new_hash[:scala][:style] << :functional
   new_hash
 end
