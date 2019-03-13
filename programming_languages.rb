@@ -6,7 +6,8 @@ def reformat_languages(languages)
     values.each do |values, types|
       types.each do |types, names|
         return names
-  
+      end
+
     end
   end
   new_hash
